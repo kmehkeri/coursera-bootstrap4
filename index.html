@@ -11,6 +11,7 @@
 
 		<title>Cthulhu Club</title>
 	</head>
+
 	<body>
 		<nav class="navbar navbar-light navbar-expand-sm">
 			<div class="container">
@@ -77,9 +78,9 @@
 					<h3>Part seven</h3>
 					<p>This is NOT YET the end of the world</p>
 				</div>
-
-				<div class="col-12">
-					<h3>Contact info</h3>
+				
+				<div class="col-12 col-md-6">
+					<h3>Address and contact</h3>
 					<ul class="list-unstyled">
 						<li><i class="fa fa-phone"></i> 000000-00000</li>
 						<li><i class="fa fa-fax"></i> 000000-00000</li>
@@ -87,6 +88,56 @@
 						<li><i class="fa fa-facebook"></i> Facebook</li>
 						<li><i class="fa fa-google-plus"></i> Google+</li>
 					</ul>
+				</div>
+				
+				<div class="col-12 col-md-6">
+					<h3>Send us feedback</h3>
+					<div class="btn-group">
+						<a class="btn btn-primary" href="tel:000000-00000"><i class="fa fa-lg fa-phone"></i> Call</a>
+						<a class="btn btn-info" href="skype:cthulhu"><i class="fa fa-lg fa-skype"></i> Skype</a>
+						<a class="btn btn-success" href="mail:contact@home.cthulhu"><i class="fa fa-lg fa-envelope"></i> Mail</a>
+					</div>
+					<hr>
+					<form>
+						<div class="form-group form-row">
+							<label for="name" class="col-md-4 col-form-label">Name</label>
+							<div class="col-md-8">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+							</div>
+						</div>
+						<div class="form-group form-row">
+							<label for="clan" class="col-md-4 col-form-label">Clan</label>
+							<div class="col-md-8">
+								<input type="text" class="form-control" id="clan" name="clan" placeholder="Your clan">
+							</div>
+						</div>
+						<div class="form-group form-row">
+							<label for="feedback" class="col-md-4 col-form-label">Feedback</label>
+							<div class="col-md-8">
+								<textarea class="form-control" id="feedback" name="feedback" rows="3" placeholder="Your valuable feedback"></textarea>
+							</div>
+						</div>
+						<div class="form-group form-row">
+							<div class="col-md-3 offset-md-4">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="agree" name="agree">
+									<label class="form-check-label" for="agree">I agree to</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<select class="form-control">
+									<option>Privacy policy</option>
+									<option>Marketing</option>
+									<option>All of above</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group form-row">
+							<div class="col-md-8 offset-md-4">
+								<button type="submit" class="btn btn-primary">Send</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
