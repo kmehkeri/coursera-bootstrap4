@@ -34,7 +34,8 @@
 		<header class="jumbotron">
 			<div class="container">
 				<div class="row" style="text-align: center;">
-					<h1 class="col-12 col-md-6">
+					<div class="col-md-2"><img src="cthulhu.png" class="img-fluid"></div>
+					<h1 class="col-12 col-md-4">
 						Cthulhu fhtagn!
 					</h1>
 					<h2 class="col-12 col-md-6" style="text-align: center;">
@@ -51,7 +52,7 @@
 				</ol>
 
 				<div class="col-12 col-md-3">
-					<h3>Part one</h3>
+					<h3>Part one <span class="badge badge-pill badge-primary">NEW</span></h3>
 					<p>Hello world</p>
 				</div>
 				<div class="col-12 col-md-6">
@@ -178,22 +179,114 @@
 							Facts at a Glance
 						</h3>
 						<div class="card-body">
+							<ul class="nav nav-tabs" id="facts-tab">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" id="facts-home-tab" href="#facts-basic">Basic</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" id="facts-financial-tab" href="#facts-financial">Financial</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" id="facts-deity-tab" href="#facts-deity">Deity</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" data-toggle="tab" id="facts-locked-tab" href="#facts-locked">Locked</a>
+								</li>
+							</ul>
+							<div class="tab-content border-right border-bottom border-left px-3 pt-3">
+								<div class="tab-pane fade show active" id="facts-basic">
+									<dl class="row">
+										<dt class="col-6">Founded</dt>
+										<dd class="col-6">4200 BC</dd>
+										<dt class="col-6">Worshippers</dt>
+										<dd class="col-6">72M</dd>
+										<dt class="col-6">Countries</dt>
+										<dd class="col-6">All</dd>
+										<dt class="col-6">Power</dt>
+										<dd class="col-6">Unsurpassed</dd>
+									</dl>
+								</div>
+								<div class="tab-pane fade" id="facts-financial">
+									<dl class="row">
+										<dt class="col-6">Yearly budget</dt>
+										<dd class="col-6">$1250M</dd>
+									</dl>
+								</div>
+								<div class="tab-pane fade" id="facts-deity">
+									<dl class="row">
+										<dt class="col-6">Number of deities</dt>
+										<dd class="col-6">12</dd>
+										<dt class="col-6">Main deity</dt>
+										<dd class="col-6">Cthulhu</dd>
+									</dl>
+								</div>
+								<div class="tab-pane fade" id="facts-locked">
+									<dl class="row">
+										<dt class="col-6">Secret</dt>
+										<dd class="col-6">Yeah, secret</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6" id="accordion">
+					<h3>Facts at a Glance (another look)</h3>
+					<div class="card">
+						<div class="card-header">
+							<a href="#accordion-basic" data-toggle="collapse">Basic</a>
+						</div>
+						<div class="card-body collapse show" id="accordion-basic" data-parent="#accordion">
 							<dl class="row">
 								<dt class="col-6">Founded</dt>
-								<dd class="col-6">4200 BC</dt>
+								<dd class="col-6">4200 BC</dd>
 								<dt class="col-6">Worshippers</dt>
-								<dd class="col-6">72M</dt>
+								<dd class="col-6">72M</dd>
 								<dt class="col-6">Countries</dt>
-								<dd class="col-6">All</dt>
+								<dd class="col-6">All</dd>
 								<dt class="col-6">Power</dt>
-								<dd class="col-6">Unsurpassed</dt>
+								<dd class="col-6">Unsurpassed</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a href="#accordion-financial" data-toggle="collapse">Financial</a>
+						</div>
+						<div class="card-body collapse" id="accordion-financial" data-parent="#accordion">
+							<dl class="row">
+								<dt class="col-6">Yearly budget</dt>
+								<dd class="col-6">$1250M</dt>
+							</dl>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a href="#accordion-deity" data-toggle="collapse">Deity</a>
+						</div>
+						<div class="card-body collapse" id="accordion-deity" data-parent="#accordion">
+							<dl class="row">
+								<dt class="col-6">Number of deities</dt>
+								<dd class="col-6">12</dt>
+								<dt class="col-6">Main deity</dt>
+								<dd class="col-6">Cthulhu</dt>
+							</dl>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a href="#accordion-locked" data-toggle="collapse" style="color: gray; pointer-events: none;">Locked</a>
+						</div>
+						<div class="card-body collapse" id="accordion-locked" data-parent="#accordion">
+							<dl class="row">
+								<dt class="col-6">Secret</dt>
+								<dd class="col-6">Yeah, secret</dt>
 							</dl>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					
-				</div>
+
 			</div>
 		</div>
 
